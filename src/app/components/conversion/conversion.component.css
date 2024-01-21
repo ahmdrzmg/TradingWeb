@@ -1,0 +1,179 @@
+/* .currency-buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+.mat-elevation-z8 {
+  margin-top: 20px;
+}
+
+.mat-row.highlighted {
+  background-color: #ffe0b2;
+}
+
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.table th {
+  background-color: #f2f2f2;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.highlight {
+  background-color: #ddd;
+}
+
+.currency-button.selected {
+  background-color: #1976d2;
+  color: #ffffff;
+} */
+
+/* Add this style to your CSS file */
+.container {
+  padding: 20px;
+}
+
+mat-card {
+  font-family: "Open Sans", sans-serif; /* Use Open Sans font */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+mat-card-title {
+  font-size: 24px;
+}
+
+.currency-button {
+  font-family: "Open Sans", sans-serif; /* Use Open Sans font */
+  font-size: 18px;
+  padding: 10px 20px;
+  margin-right: 5px;
+}
+
+.currency-button.selected {
+  background-color: #1976d2; /* Change this to your primary color */
+  color: #ffffff; /* Change this to the desired text color */
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+}
+
+.table th {
+  background-color: #f2f2f2;
+  color: #0380fc;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.highlight {
+  background-color: #65a7f7; /* Change this to the desired highlight color */
+  font-weight: bold;
+}
+
+.last-row {
+  background-color: #6865f7; /* Change this to the desired color for the last row */
+  color: #fff;
+  font-size: 18px;
+}
+
+.selected-type {
+  background-color: #4caf50; /* Change this to the desired background color */
+  color: white; /* Change this to the desired text color */
+  font-size: 16px; /* Change this to the desired font size */
+}
+
+/* cards.component.css */
+.custom-card {
+  width: 300px;
+  margin: 16px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-header {
+  background-color: #304f56; /* Blue color for header background */
+  color: white; /* White text color */
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-number {
+  font-size: 24px;
+}
+
+.card-title {
+  font-size: 18px;
+}
+
+.card-text {
+  font-family: "Open Sans", sans-serif;
+  padding: 15px;
+  text-align: left;
+}
+
+.payout-container {
+  display: flex;
+  width: 100%;
+}
+.image-container {
+  flex: 1;
+  padding: 10px;
+}
+
+.text-container {
+  flex: 1;
+  padding: 10px;
+}
+
+.rounded-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.heading {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}

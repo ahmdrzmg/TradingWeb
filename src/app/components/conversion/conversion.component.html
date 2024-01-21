@@ -1,0 +1,87 @@
+<div class="container">
+  <div class="card-container">
+    <mat-card *ngFor="let card of cards" class="custom-card">
+      <div class="card-header">
+        <span class="card-number">{{ card.number }}</span>
+        <span class="card-title">{{ card.title }}</span>
+      </div>
+      <div class="card-text">{{ card.text }}</div>
+    </mat-card>
+  </div>
+
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Currency:</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <button
+        class="currency-button"
+        *ngFor="let type of currencyTypes"
+        mat-raised-button
+        (click)="changeCurrencyType(type)"
+        [ngClass]="{ 'selected-type': type === currentType }"
+        [style.background-color]="type === currentType ? '#4caf50' : ''"
+        [style.color]="type === currentType ? 'white' : ''"
+        [style.fontSize.px]="type === currentType ? 16 : 14"
+      >
+        {{ type }}
+      </button>
+    </mat-card-content>
+
+    <mat-card-header>
+      <mat-card-title>Balance:</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <button
+        *ngFor="let currency of currencies"
+        mat-raised-button
+        class="currency-button"
+        (click)="handleCurrencyClick(currency)"
+        [class.selected]="currency === selectedCurrency"
+      >
+        {{ currency }}
+      </button>
+    </mat-card-content>
+  </mat-card>
+
+  <table class="table">
+    <tr *ngFor="let data of tableData; let rowIndex = index">
+      <th>{{ data.name }}</th>
+      <td
+        *ngFor="let value of data.values; let i = index"
+        [ngClass]="{
+          highlight: isColumnHighlighted(i),
+          'last-row': rowIndex === tableData.length - 1
+        }"
+      >
+        {{ value }}
+      </td>
+    </tr>
+  </table>
+
+  <div class="payout-container">
+    <div class="image-container">
+      <img src="assets/payout.jpg" alt="Image" class="rounded-image" />
+    </div>
+    <div class="text-container">
+      <h2 class="heading">Payout System</h2>
+      <p class="text">
+        The default payout ratio for all PPF Traders is set to 80%, however, an
+        80% share is not where we draw the line.
+      </p>
+      <p class="text">
+        All PPF Traders can request payout on-demand. The payout can be
+        processed just after 14 days, but you also have the ability to choose
+        your own Profit Split Day, which can be even changed up to three times.
+        In conclusion, we make sure that you will always receive your withdrawal
+        on your most convenient day.
+      </p>
+      <p class="text">
+        If you meet the conditions of our Scaling Plan, not only do we increase
+        the balance of your PPF Account by 25%, the payout ratio will also
+        automatically change to a staggering 90 %!
+      </p>
+      <p class="text">Payment can be in dollars or bitcoins.</p>
+    </div>
+  </div>
+</div>

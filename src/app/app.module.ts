@@ -12,9 +12,10 @@ import { MatTableModule } from '@angular/material/table';
 import {} from '@angular/material/table';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ConversionComponent } from './components/conversion/conversion.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, ConversionComponent],
+  declarations: [AppComponent, HeaderComponent, ConversionComponent, FooterComponent],
   imports: [
     BrowserModule,
     MatToolbarModule,

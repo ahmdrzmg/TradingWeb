@@ -1,0 +1,15 @@
+/* Your main content styles go here */
+
+/* Footer styles */
+footer {
+  background-color: transparent; /* Light gray background */
+  padding: 10px;
+  text-align: center;
+  border-top: 1px solid gray;
+}
+
+.footer-text {
+  color: #333; /* Dark text color */
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif; /* Make sure to include the Open Sans font in your project */
+}

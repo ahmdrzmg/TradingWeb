@@ -1,3 +1,4 @@
-.example-spacer {
-  flex: 1 1 auto;
+.logo-image {
+  height: 100px; /* Adjust the height according to your design */
+  width: 300px;
 }
